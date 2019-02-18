@@ -1,5 +1,5 @@
-<img src="https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png" alt="Image of confusion_matrix.png" width=500 position= center>
-<img src="https://cdn.discordapp.com/attachments/511941623299571713/546851514208223242/unknown.png" alt="Image of evaluation_metrics.csv" width=300 position = center>
+<img src="https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png" alt="Image of confusion_matrix.png" width=500 align= "center">
+<img src="https://cdn.discordapp.com/attachments/511941623299571713/546851514208223242/unknown.png" alt="Image of evaluation_metrics.csv" width=300 align = "center">
 
 # Overview
 Scripts to generate evaluation metrics from models trained using Tensorflow's Object Detection API
