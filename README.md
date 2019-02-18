@@ -43,8 +43,8 @@ This is based off an older version of the API which is the only version I got to
 `class | class accuracy | class f1score | class iou | overall accuracy | average of valid f1scores | average iou`
 
 # Images
-![Image of evaluation_metrics.csv](https://cdn.discordapp.com/attachments/511941623299571713/546851514208223242/unknown.png){:height="50%" width="50%"}
-![Image of confusion_matrix.png](https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png){:height="50%" width="50%"}
+<img src="https://cdn.discordapp.com/attachments/511941623299571713/546851514208223242/unknown.png" alt="Image of evaluation_metrics.csv" width=200>
+<img src="https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png" alt="Image of confusion_matrix.png" width=200>
 
 
 
