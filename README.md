@@ -29,6 +29,10 @@ This is based off an older version of the API which is the only version I got to
 `Test.csv` is a csv containing information about every image in the test set with the columns:<br /><br />
 `filename | width | height | class | xmin | ymin | xmax | ymax`<br />
 
+## Requirements
+
+`numpy, tensorflow, pandas, pickle, matplotlib, PIL, os, sys`
+
 # Instructions
 1. Check over the directory paths in `evaluate_test.py`<br />
 2. run `python3 generate_evaluation_metrics.py`<br />
