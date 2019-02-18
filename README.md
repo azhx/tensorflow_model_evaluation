@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png" alt="Image of confusion_matrix.png" width=500 align= "center">
   <img src="https://cdn.discordapp.com/attachments/511941623299571713/546851514208223242/unknown.png" alt="Image of evaluation_metrics.csv" width=300 align = "center">
 </p>
