@@ -8,6 +8,8 @@ This is a repo of two scripts used to generate evaluation metrics from models tr
 
 This is based off an older version of the API which is the only version I got to work, but it should still work for newer versions if you have the files organized as below.
 
+In reality, it will work as long as you have `object-detection.pbtxt` , `frozen_inference_graph.pb` , and a valid `Test.csv`
+
 # Instructions
 1. Check over the directory paths in `evaluate_test.py`<br />
 2. run `python3 generate_evaluation_metrics.py`<br />
