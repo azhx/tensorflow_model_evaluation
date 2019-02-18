@@ -37,5 +37,15 @@ This is based off an older version of the API which is the only version I got to
 1. Check over the directory paths in `evaluate_test.py`<br />
 2. run `python3 generate_evaluation_metrics.py`<br />
 3. evaluate_test.py will make predictions on every image. This should take a bit of time, but there are logs. This will generate 2 important files `unifieddata.p` and `category_index.p`. If you already have these two files, you can change MODE in `generate_evaluation_metrics.py` to 2<br />
-4. a file named `evaluation_metrics.csv` containing the evaluation metrics will be generated.<br />
+4. a file named `evaluation_metrics.csv` containing the evaluation metrics will be generated and a confusion matrix named `confusion_matrix.png` will be saved to the root directory<br />
+
+`evaluation_metrics.csv` will contain 
+`class | class accuracy | class f1score | class iou | overall accuracy | average of valid f1scores | average iou`
+
+## Images
+![Image of evaluation_metrics.csv](https://cdn.discordapp.com/attachments/511941623299571713/546850762601267211/unknown.png)
+![Image of confusion_matrix.png](https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png)
+
+
+
 
