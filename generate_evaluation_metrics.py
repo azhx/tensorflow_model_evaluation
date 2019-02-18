@@ -205,8 +205,8 @@ def output_everything(accuracy, classaccuracies, f1scores, classious, df_confusi
 
 if __name__ == '__main__':
 
-    MODE = 1  # Evaluate full test set and calculate metrics
-    #MODE = 2 # Calculate metrics only from pickle files
+    #MODE = 1  # Evaluate full test set and calculate metrics
+    MODE = 2 # Calculate metrics only from unifieddata.p and category_index.p files
 
     if (MODE == 1):
         #from evaluate_test.py, predict on all images of test set
@@ -215,15 +215,20 @@ if __name__ == '__main__':
     #load in necessary data
     unified_data = pickle.load(open('unifieddata.p', 'rb'))
     category_index = pickle.load(open('category_index.p', 'rb'))
-
+    print ('successfully loaded unified_data and category_index')
     #flatten predictions (some dimensions may be mismatched)
     ypreds, ytrue = flatten_ypreds(unified_data), flatten_ytrue(unified_data)
-
+    print ('flattened predictions')
     #calculate metrics
     df_confusion = generate_df_confusion(ytrue, ypreds, category_index)
+    print ('generated confusion matrix')
     accuracy, classaccuracies = calculate_accuracy(df_confusion)
+    print ('calculated accuracy')
     f1scores = calculate_f1scores(df_confusion)
+    print ('calculated f1scores')
     classious = calculate_iou(ytrue, ypreds, df_confusion)
+    print ('calculated ious')
 
     #output and save everything
     output_everything(accuracy, classaccuracies, f1scores, classious, df_confusion)
+    print ('success')
