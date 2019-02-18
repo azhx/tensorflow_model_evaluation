@@ -1,6 +1,5 @@
 import numpy as np
 import os
-import six.moves.urllib as urllib
 import sys
 import tensorflow as tf
 import pandas as pd
@@ -60,7 +59,7 @@ def _run_test_set_prediction():
 
 
     #Read Testcsv from current directory
-    testcsv = pd.read_csv('test.csv')
+    testcsv = pd.read_csv('Test.csv')
     testcsv = testcsv.sort_values(by=['filename'])
     testcsv = testcsv.reset_index(drop=True)
 
@@ -147,6 +146,7 @@ def _output_and_write_data(predict, testcsv, category_index):
     testcsv.to_csv('sorted_test.csv')
     #category_index required in other scripts
     pickle.dump(category_index, open("category_index.p", "wb"))
+
     return
 
 
@@ -214,7 +214,7 @@ def evaluate_test_set(MODE = 'RUN'):
 
     if MODE == 'DEBUG':
         predict = pd.read_csv('predict.csv')
-        testcsv = pd.read_csv('test.csv')
+        testcsv = pd.read_csv('Test.csv')
         testcsv = testcsv.sort_values(by=['filename'])
         testcsv = testcsv.reset_index(drop=True)
         category_index = pickle.load(open("category_index.p", "rb"))
