@@ -42,8 +42,8 @@ This is based off an older version of the API which is the only version I got to
 `evaluation_metrics.csv` will contain 
 `class | class accuracy | class f1score | class iou | overall accuracy | average of valid f1scores | average iou`
 
-## Images
-![Image of evaluation_metrics.csv](https://cdn.discordapp.com/attachments/511941623299571713/546850762601267211/unknown.png)
+# Images
+![Image of evaluation_metrics.csv](https://cdn.discordapp.com/attachments/511941623299571713/546851514208223242/unknown.png)
 ![Image of confusion_matrix.png](https://cdn.discordapp.com/attachments/511941623299571713/546851305897852938/unknown.png)
 
 
