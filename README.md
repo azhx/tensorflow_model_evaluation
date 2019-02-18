@@ -24,9 +24,9 @@ This is based off an older version of the API which is the only version I got to
 └── generate_evaluation_metrics.py
 
 ```
-`utils` is from https://github.com/tensorflow/models/tree/master/research/object_detection<br />
-`frozen_inference_graph.pb` is the graph of whatever object detection model you've trained<br />
-`Test.csv` is a csv containing information about every image in the test set with the columns:<br />
+`utils` is from https://github.com/tensorflow/models/tree/master/research/object_detection<br /><br />
+`frozen_inference_graph.pb` is the graph of whatever object detection model you've trained<br /><br />
+`Test.csv` is a csv containing information about every image in the test set with the columns:<br /><br />
 `filename | width | height | class | xmin | ymin | xmax | ymax`<br />
 
 ## Instructions
