@@ -4,9 +4,9 @@
 </p>
 
 # Overview
-Scripts to generate evaluation metrics from models trained using Tensorflow's Object Detection API
+This is a repo of two scripts used to generate evaluation metrics from models trained using Tensorflow's Object Detection API
 
-This is based off an older version of the API which is the only version I got to work, but it should still work for newer versions if you have the files organized like this.
+This is based off an older version of the API which is the only version I got to work, but it should still work for newer versions if you have the files organized as below.
 
 # Instructions
 1. Check over the directory paths in `evaluate_test.py`<br />
